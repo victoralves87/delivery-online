@@ -1968,9 +1968,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
+.bg-home {
+  background-image: url('./assets/bg.png');
 }
 
 .decoration-slice {
