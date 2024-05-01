@@ -12,7 +12,23 @@ const pagWarn = document.getElementById("pag-warn")
 const addressWarn = document.getElementById("address-warn")
 const obs = document.getElementById("observations")
 
+
 let cart = [];
+
+
+const cartIcons = document.querySelectorAll('.cart-icon');
+
+  cartIcons.forEach(function(cartIcon) {
+    cartIcon.addEventListener('click', function() {
+      // Adiciona o movimento para cima
+      cartIcon.classList.add('-translate-y-1');
+
+      // Define um temporizador para remover o movimento após 200 milissegundos (ou 0.2 segundos)
+      setTimeout(function() {
+        cartIcon.classList.remove('-translate-y-1');
+      }, 200);
+    });
+  });
 
 
 //abrir modal carrinho
